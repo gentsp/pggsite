@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="./css/normalize.css" rel="stylesheet" />
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
@@ -16,7 +17,9 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="img/logo.svg" />
+      <a href="./index.html">
+        <img class="logo" src="img/logo.svg" />
+      </a>
       <nav class="header-nav">
         <a href="#">WE STAND FOR EXCELLENCE</a>
         <a href="#">518 Agnes St. New Westminster V3L</a>
@@ -41,18 +44,17 @@
           </a>
         </div>
         <div class="nav-wrapper">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a href="#">Contacts</a>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./contact.html">Contacts</a>
         </div>
       </nav>
     </header>
     <section class="main-hero">
       <div id="hero" class="non-slider">
-        <div class="heroitem">
-          <img src="vendor/house1.jpg" />
+        <div class="heroitem" style="background: no-repeat center center url('./vendor/p1.jpg')">
           <div class="title">
             <h3 class="hero-caption">Humollis Residence</h3>
             <span class="hero-desc">Finishing Carpentry</span>
@@ -82,9 +84,9 @@
         </div>
       </section>
       <section class="gallery">
-        <img src="vendor/house1.jpg" style="width: 100%;" />
-        <img src="vendor/house1.jpg" style="width: 50%; padding-right: 8px;" />
-        <img src="vendor/house1.jpg" style="width: 50%; padding-left: 8px;" />
+        <img src="vendor/p1.jpg" style="width: 100%;" />
+        <img src="vendor/p2.jpg" style="width: 50%; padding-right: 8px;" />
+        <img src="vendor/p3.jpg" style="width: 50%; padding-left: 8px;" />
       </section>
       <section class="title-desc">
         <h2>Sustainability</h2>
@@ -108,9 +110,9 @@
           façade systems.</p>
         </p>
       </section>
-      <img src="vendor/house1.jpg" style="width: 100%;" />
+      <img src="vendor/p4.jpg" style="width: 100%;" />
       <section class="back-to">
-          <a href="#"><img src="img/back-arrow.svg" />Back to Projects</a>
+          <a href="./projects.html"><img src="img/back-arrow.svg" />Back to Projects</a>
       </section>
     </div>
   </body>

@@ -146,9 +146,10 @@ nav#main-nav .nav-wrapper a:hover {
   position: relative;
 }
 
-#hero .heroitem img {
+#hero .heroitem {
   width: 100%;
   height: 100vh;
+  background-size: cover !important;
 }
 
 #hero .heroitem .title {
@@ -636,7 +637,7 @@ footer .item .map-click {
 }
 
 .service .service-body {
-  background: center no-repeat url("../vendor/house1.jpg");
+  background: center no-repeat url("../vendor/img2_p.jpg");
   border-radius: 10px;
 }
 
@@ -801,6 +802,11 @@ footer .item .map-click {
   display: inline-block;
 }
 
+#map {
+  width: 100%;
+  height: 100vh;
+}
+
 @media (max-width: 1645px) {
   .container {
     width: 100%;
@@ -830,6 +836,12 @@ footer .item .map-click {
     transform: scale(0.9);
     top: -21px;
     left: -23px;
+  }
+
+  .click-wrapper.grey .click-btn .arrow::after {
+    transform: scale(0.9);
+    top: -22px;
+    left: -21px;
   }
 
   .features .item p {
@@ -917,6 +929,12 @@ footer .item .map-click {
     left: -33px;
   }
 
+  .click-wrapper.grey .click-btn .arrow::after {
+    transform: scale(0.6);
+    top: -33px;
+    left: -32px;
+  }
+
   .click-wrapper {
     margin-top: 0px;
   }
@@ -974,6 +992,14 @@ footer .item .map-click {
   footer {
     padding: 80px 40px;
   }
+
+  .title-desc {
+    padding: 50px 30px;
+  }
+
+  .team-grid .team .member {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 890px) {
@@ -993,6 +1019,7 @@ footer .item .map-click {
   .container {
     padding: 0 10px;
   }
+
   header {
     height: 70px;
   }
@@ -1091,6 +1118,35 @@ footer .item .map-click {
   footer .item p {
     font-size: 32px;
   }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-grid .team .member {
+    width: 70%
+  }
+
+  .title-desc h2 {
+    font-size: 40px;
+  }
+
+  .gallery img {
+    width: 100% !important;
+  }
+
+  nav#main-nav .nav-wrapper {
+    font-size: 66px;
+  }
+
+  header nav .hamburger.active span:nth-child(1) {
+    top: 9px;
+  }
+
+  header nav .hamburger.active span:nth-child(3) {
+    top: -9px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1118,5 +1174,13 @@ footer .item .map-click {
 
   footer {
     padding: 40px 20px;
+  }
+
+  .back-to a {
+    font-size: 26px;
+  }
+
+  nav#main-nav .nav-wrapper {
+    font-size: 46px;
   }
 }

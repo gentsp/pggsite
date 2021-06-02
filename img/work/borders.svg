@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="389" viewBox="0 0 390 389">
+  <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(26 26)" fill="none" stroke="#212930" stroke-width="2">
+    <ellipse cx="169" cy="168.5" rx="169" ry="168.5" stroke="none"/>
+    <ellipse cx="169" cy="168.5" rx="168" ry="167.5" fill="none"/>
+  </g>
+  <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(15 15)" fill="none" stroke="#212930" stroke-width="1">
+    <ellipse cx="180" cy="179.5" rx="180" ry="179.5" stroke="none"/>
+    <ellipse cx="180" cy="179.5" rx="179.5" ry="179" fill="none"/>
+  </g>
+  <g id="Ellipse_15" data-name="Ellipse 15" fill="none" stroke="#212930" stroke-width="1" opacity="0.5">
+    <ellipse cx="195" cy="194.5" rx="195" ry="194.5" stroke="none"/>
+    <ellipse cx="195" cy="194.5" rx="194.5" ry="194" fill="none"/>
+  </g>
+</svg>

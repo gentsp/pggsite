@@ -385,6 +385,14 @@ footer .item .map-click {
   align-self: flex-start;
 }
 
+.click-btn.full {
+  display: flex;
+  width: 271.23px;
+  height: 108px;
+  align-items: center;
+  justify-content: center;
+}
+
 .click-btn.full span {
   padding: 26px 56px;
   background-color: #2e93d2;
@@ -416,8 +424,7 @@ footer .item .map-click {
 }
 
 .title-desc .click-btn.full {
-  display: inline-block;
-  margin-top: 40px;
+  margin: 40px auto;
 }
 
 .click-wrapper {
@@ -469,7 +476,61 @@ footer .item .map-click {
   background: no-repeat center center #2d91cf url("../img/btn-arrow.svg");
 }
 
-.click-btn .arrow::after {
+.click-btn .b1,
+.click-btn .b2,
+.click-btn .b3 {
+  border-radius: 50%;
+  border: 1px solid #2e93d2;
+}
+
+.click-btn .b1:hover,
+.click-btn .b2:hover {
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+}
+
+.click-btn .b3:hover {
+  animation-name: slidein3;
+  animation-fill-mode: forwards;
+}
+
+.click-btn .b3 {
+  padding: 3px;
+  border: 2px solid #2e93d2;
+  animation-duration: 0.5s;
+}
+
+.click-btn .b2 {
+  padding: 6px;
+  animation-duration: 1s;
+}
+
+.click-btn .b1 {
+  padding: 6px;
+  animation-duration: 1.5s;
+}
+
+@keyframes slidein {
+  0% {
+    border: 0;
+  }
+
+  100% {
+    border: 1px solid #2e93d2;
+  }
+}
+
+@keyframes slidein3 {
+  0% {
+    border: 0;
+  }
+
+  100% {
+    border: 2px solid #2e93d2;
+  }
+}
+
+/* .click-btn .arrow::after {
   content: "";
   width: 106px;
   height: 102px;
@@ -477,7 +538,7 @@ footer .item .map-click {
   top: -16px;
   left: -18px;
   background: no-repeat url("../img/triple-border.svg");
-}
+} */
 
 .stats {
   display: flex;
@@ -710,11 +771,10 @@ footer .item .map-click {
   margin: 0 auto 100px;
 }
 
-.work .work-materials div {
+.work .work-materials .item {
   width: 322px;
   height: 322px;
-  border-radius: 100%;
-  margin: 0 30px;
+  border-radius: 50%;
 }
 
 .work .work-materials {
@@ -731,14 +791,59 @@ footer .item .map-click {
   background: center no-repeat url("../img//work/metal.png");
 }
 
-.work .work-materials .mat2::after {
-  content: "";
-  position: absolute;
-  background: center no-repeat url("../img/work/borders.svg");
-  top: -34px;
-  left: -34px;
-  width: 390px;
-  height: 390px;
+.work .work-materials .b1,
+.work .work-materials .b2,
+.work .work-materials .b3 {
+  border-radius: 50%;
+}
+
+.work .work-materials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 352px;
+  height: 352px;
+}
+
+.work .work-materials .b3 {
+  padding: 3px;
+}
+
+.work .work-materials .b2 {
+  padding: 6px;
+}
+
+.work .work-materials .b1 {
+  padding: 6px;
+}
+
+.work .work-materials .b1:hover,
+.work .work-materials .b2:hover,
+.work .work-materials .b3:hover {
+  animation-name: slidein4;
+  animation-fill-mode: forwards;
+}
+
+.work .work-materials .b1:hover {
+  animation-duration: 1.5s;
+}
+
+.work .work-materials .b2:hover {
+  animation-duration: 1s;
+}
+
+.work .work-materials .b3:hover {
+  animation-duration: 0.5s;
+}
+
+@keyframes slidein4 {
+  0% {
+    border: 0;
+  }
+
+  100% {
+    border: 1px solid #000000;
+  }
 }
 
 .work .work-materials .mat3 {
@@ -878,10 +983,11 @@ footer .item .map-click {
     width: 90%;
   }
 
-  .work .work-materials div {
+  /* .work .work-materials a,
+  .work .work-materials .item {
     width: 280px;
     height: 280px;
-  }
+  } */
 
   .work .work-materials .mat2::after {
     transform: scale(0.9);
@@ -891,7 +997,7 @@ footer .item .map-click {
 }
 
 @media (max-width: 1200px) {
-  .work .work-materials div {
+  .work .work-materials .item {
     width: 250px;
     height: 250px;
   }
@@ -1004,15 +1110,14 @@ footer .item .map-click {
     padding: 16px 36px;
   }
 
-  .work .work-materials div {
+  .work .work-materials .item {
     width: 220px;
     height: 220px;
   }
 
-  .work .work-materials .mat2::after {
-    transform: scale(0.7);
-    top: -85px;
-    left: -85px;
+  .work .work-materials a {
+    width: 256px;
+    height: 256px;
   }
 
   footer .item {
@@ -1033,15 +1138,14 @@ footer .item .map-click {
 }
 
 @media (max-width: 890px) {
-  .work .work-materials div {
+  .work .work-materials .item {
     width: 190px;
     height: 190px;
   }
 
-  .work .work-materials .mat2::after {
-    transform: scale(0.6);
-    top: -101px;
-    left: -101px;
+  .work .work-materials a {
+    width: 220px;
+    height: 220px;
   }
 }
 
@@ -1122,16 +1226,14 @@ footer .item .map-click {
     min-height: unset;
   }
 
-  .work .work-materials div {
+  .work .work-materials .item {
     width: 260px;
     height: 260px;
-    margin-bottom: 50px;
   }
 
-  .work .work-materials .mat2::after {
-    transform: scale(0.8);
-    top: -66px;
-    left: -66px;
+  .work .work-materials a {
+    width: 296px;
+    height: 296px;
   }
 
   .work .container h3 {

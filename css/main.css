@@ -983,12 +983,6 @@ footer .item .map-click {
     width: 90%;
   }
 
-  /* .work .work-materials a,
-  .work .work-materials .item {
-    width: 280px;
-    height: 280px;
-  } */
-
   .work .work-materials .mat2::after {
     transform: scale(0.9);
     top: -56px;
